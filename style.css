@@ -1,0 +1,70 @@
+
+body {
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+.navbar > ul {
+    list-style-type: none;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar > ul > li {
+    float: left;
+}
+
+.navbar {
+	background-color: #034D7C;
+}
+
+.navbar-home {
+	font-size: 18px;
+	text-decoration: none;
+	padding: 15px;
+	color: #FFF;
+	display: block;
+    width: 100px;
+}
+
+.navbar-nav {
+	font-size: 18px;
+	text-decoration: none;
+	padding: 15px;
+	color: #FFF;
+	display: block;
+    width: 100px;
+}
+
+.navbar-now {
+	font-size: 18px;
+	text-decoration: none;
+	padding: 15px;
+	color: #034D7C;
+	display: block;
+    width: 100px;
+    background-color: #9AB8CB;
+}
+
+.container {
+	width: 60%;
+	padding-left: 4%;
+	padding-right: 4%;
+	font-size: 16px;
+	float: left;
+}
+
+.container > ul > li {
+	margin: 4%;
+	font-size: 14px;
+}
+
+.container > p > a {
+	text-decoration: none;
+}
+
+.me {
+	width: 32%;
+	float: left;
+}
+
