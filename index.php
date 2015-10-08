@@ -22,27 +22,7 @@
 					I received my Bachelor of Science in Computer Science (<i>cum laude</i>) from the <a href="http://www.unibe.ch/eng/">University of Bern</a>, Switzerland. I got the <a href="http://mcs.unibnf.ch/">Swiss Joint Master of Science in Computer Science</a> (<i>summa cum laude</i>) of the Universities of <a href="http://www.unibe.ch/eng/">Bern</a>, <a href="http://www.unine.ch/">Neuch&#226;tel</a> and <a href="http://www.unifr.ch/home/welcomeE.php">Fribourg</a>.
 				</p>
 			</div>
-			<div class="me">
-				<p>
-					Mirco Kocher
-					<br/>
-					<a href="http://www2.unine.ch/cms/lang/en/pid/5100_en">Computer science department</a>
-					<br/>
-					<a href="http://www.unine.ch/">Universit&#233; de Neuch&#226;tel</a>
-				</p>
-				<p>
-					Room B123
-					<br/>
-					Rue Emile-Argand 11
-					<br/>
-					2000 Neuch&#226;tel, Switzerland
-					<br/>
-					e-mail: firstname.lastname/AT/unine.ch
-				</p>
-				<p>
-					<a href="http://dblp.uni-trier.de/pers/hd/k/Kocher:Mirco">My dblp</a>
-				</p>
-			</div>
+			<?php include ("me-sidebar.php"); ?>
 		</div>
 		<?php include ("footer.php"); ?>
 	</body>

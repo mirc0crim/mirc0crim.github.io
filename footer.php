@@ -1,4 +1,4 @@
 <div class="footer">
-	Last Updated: 2015/08/07
+	Last Updated: 2015/10/07
 </div>
 
