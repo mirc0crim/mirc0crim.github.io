@@ -1,21 +1,23 @@
 
-body {
+html, body {
+	height: 100%;
 	margin: 0px;
-	font-family: sans-serif;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.navbar {
+	background-color: #034D7C;
 }
 
 .navbar > ul {
     list-style-type: none;
     margin: 0px;
     overflow: hidden;
+    text-align: center;
 }
 
 .navbar > ul > li {
     float: left;
-}
-
-.navbar {
-	background-color: #034D7C;
 }
 
 .navbar-home {
@@ -25,6 +27,7 @@ body {
 	color: #FFF;
 	display: block;
     width: 100px;
+    text-align: left;
 }
 
 .navbar-nav {
@@ -47,6 +50,11 @@ body {
 }
 
 .container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.main {
 	width: 60%;
 	padding-left: 4%;
 	padding-right: 4%;
@@ -54,17 +62,25 @@ body {
 	float: left;
 }
 
-.container > ul > li {
+.main > ul > li {
 	margin: 4%;
 	font-size: 14px;
 }
 
-.container > p > a {
+.main > p > a {
 	text-decoration: none;
 }
 
 .me {
 	width: 32%;
 	float: left;
+}
+
+.footer {
+	clear: both;
+	padding-top: 30px;
+	font-size: 14px;
+	color: #AAA;
+	text-align: center;
 }
 
