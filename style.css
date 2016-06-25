@@ -80,7 +80,8 @@ a {
 
 .footer {
 	clear: both;
-	padding-top: 30px;
+	padding-top: 75px;
+	padding-bottom: 5px;
 	font-size: 14px;
 	color: #AAA;
 	text-align: center;
