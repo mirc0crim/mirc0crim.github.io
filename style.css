@@ -86,7 +86,7 @@ a {
 	text-align: center;
 }
 
-li:hover {
+li.tooltip:hover {
 	background: #FFF;
 	text-decoration: none;
 }
@@ -94,7 +94,7 @@ li:hover {
 li.tooltip span {
 	display: none;
 	padding: 7px;
-	margin-left: 10px;
+	margin-left: 25px;
 	margin-right: 40%;
 	border-radius: 7px 14px;
 }
