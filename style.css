@@ -9,6 +9,10 @@ html, body {
 	background-color: #034D7C;
 }
 
+.navbar a {
+	border-bottom: none;
+}
+
 .navbar > ul {
     list-style-type: none;
     margin: 0px;
