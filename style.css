@@ -125,46 +125,9 @@ mk.tooltip:hover {
 	border-radius: 7px 14px;
 }
 
-.tooltip:hover span{
+.tooltip:hover span {
 	display: inline;
 	position: absolute;
 	background: #9AB8CB;
 	color: #034D7C;
-}
-
-.coverlist li {
-	display: inline-block;
-	position: relative;
-}
-
-#book {
-	width: 150px;
-	height: 250px;
-}
-
-#game {
-	width: 375px;
-	height: 175px;
-}
-
-#sports {
-	width: 275px;
-	height: 200px;
-}
-
-.coverhover {
-	width: 150px;
-	height: 250px;
-	background: rgba(255,255,255,0.75);
-	color: #000;
-	position: absolute;
-	text-align: center;
-	font-size: 20px;
-	top: 0;
-	left: 0;
-	opacity: 0;
-}
-
-.coverhover:hover {
-	opacity: 1;
 }
