@@ -32,6 +32,49 @@
                     There are &#9632; journal articles, &#9679; conference proceedings, and &#9675; working notes.
                 </p>
                 <p>
+                    <b>2018</b> 
+                </p>
+                <ul>
+                    <li class="tooltip" style="list-style: none;">
+                        <b>Text Clustering with Styles</b>.<br/>
+                        Mirco Kocher. Thesis to obtain the Doctor of Philosophy in Computer Science.<br/>
+                        <i>University of Neuchâtel, computer science department</i>.<br/>
+                        Jury: Prof. J. Savoy, Prof. F. Crestani, Prof. P. Rosso, and Dr. V. Schiavoni.
+                        <a target="_blank" href="http://doc.rero.ch/record/306696">Thesis</a>
+                        <br/>
+                        <span>
+                            This thesis mainly describes the author clustering problem where, based on a set of <i>n</i> texts, the goal is to determine the number <i>k</i> of distinct authors and regroup the texts into <i>k</i> classes according to their author.
+                            We iteratively build a stable and simple model for text clustering with styles.
+                            We start by designing a measure reflecting the (un)certainty of the proposed decision such that every decision comes along with a confidence of correctness instead of only giving a single answer.
+                            Afterwards, we link those pairs of texts where we see an indication of a shared authorship and have enough evidence that the same person has written them.
+                            Finally, after checking every text tuple, if we can link them together, we build the final clusters based on a strategy using a distance of probability distributions.
+                            Employing a dynamic threshold, we can choose the smallest relative distance values to detect a common origin of the texts.
+                            The most similar observations (or the category with the smallest distance) to the sample in question usually determines the proposed answers.
+                            We test multiple inter-textual distance functions in theoretical and empirical tests and show that the Tanimoto and Matusita distances respect all theoretical properties.
+                            Both of them perform well in empirical tests, but the Canberra and Clark measures are even better suited even though they do not fulfill all the requirements.
+                            Our model can choose the characteristics that are the most relevant to the text in question and can analyze the author adequately.
+                            We apply our systems in various natural languages belonging to a variety of language families and in multiple text genres.
+                        </span>
+                    </li>
+                    <li class="tooltip" type="square">
+                        <b>Evaluation of Text Representation Schemes and Distance Measures for Authorship Linking</b>.<br/>
+                        Mirco Kocher &amp; Jacques Savoy.<br/>
+                        <i>Scientometrics</i>, Springer, to appear.
+                        <br/>
+                        <span>
+                            Based on <i>n</i> text excerpts, the authorship linking task is to determine a way to link pairs of documents written by the same person together.
+                            To achieve this, various text representation strategies can be applied, such as characters, punctuation symbols, or letter <i>n</i>-grams as well as words, lemmas, Part-Of-Speech (POS) tags, and sequences of them.
+                            To estimate the stylistic distance (or similarity) between two text excerpts, different measures have been suggested based on the L<sup>1</sup> norm (e.g., Manhattan, Tanimoto), the L<sup>2</sup> norm (e.g., Matusita), the inner product (e.g., Cosine), or the entropy paradigm (e.g., Jeffrey divergence).
+                            Three corpora, extracted from French and English literature, have been evaluated using standard methodology.
+                            No systematic difference can be found between token- or lemma-based text representations.
+                            Simple POS tags do not provide an effective solution but short sequences of them form a good text representation.
+                            Letter <i>n</i>-grams (with <i>n</i> = 4 to 6) give high precision rates.
+                            As distance measures, this study found that the Tanimoto, Matusita, and Clark distance measures perform better than the often-used Cosine function.
+                            Finally, applying a pruning procedure (e.g., culling terms appearing once or twice or limiting the vocabulary to the 500 most frequent words) reduces the representation complexity and might even improve the effectiveness of the attribution scheme. 
+                        </span>
+                    </li>
+                </ul>
+                <p>
                     <b>2017</b> 
                 </p>
                 <ul>
@@ -54,15 +97,15 @@
                         <b>Distributed Language Representation for Authorship Attribution</b>.<br/>
                         Mirco Kocher &amp; Jacques Savoy.<br/>
                         <i>Digital Scholarship in the Humanities</i>.
-                        <a target="_blank" href="http://dx.doi.org/10.1093/llc/fqx046">Paper</a> (to appear)
+                        <a target="_blank" href="http://dx.doi.org/10.1093/llc/fqx046">Paper</a>
                         <br/>
                         <span>
-                            Distributed language representation (deep learning) has been applied successfully in different applications in natural language processing (NLP).
+                            Distributed language representation (deep learning) has been applied successfully in different applications in natural language processing.
                             Using this model, we propose and implement two new authorship attribution classifiers.
                             In this perspective, a vector-space representation can be generated for each author or disputed text according to words and their nearby context.
                             To determine the authorship of a disputed text, the cosine similarity between vector representations can be applied.
                             The proposed strategies can be adapted without any difficulty to different languages (such as English and Italian) or genres (essays, political speeches, and newspaper articles).
-                            Evaluations using the k-nearest neighbors and based on four test collections (the Federalist Papers, the State of the Union addresses, the Glasgow Herald, and La Stampa newspapers) indicate that the distributed language representation preforms well, providing sometimes better effectiveness than state-of-the-art methods such as k-NN, NSC, chi-square, Delta, LDA (latent Dirichlet allocation), or multi-layer perceptron classifier.
+                            Evaluations using the <i>k</i>-nearest neighbors and based on four test collections (the Federalist Papers, the State of the Union addresses, the Glasgow Herald, and La Stampa newspapers) indicate that the distributed language representation preforms well, providing sometimes better effectiveness than state-of-the-art methods such as <i>k</i>-NN, NSC, chi-square, Delta, LDA (latent Dirichlet allocation), or multi-layer perceptron classifier.
                         </span>
                     </li>
                     <li class="tooltip" type="square">
@@ -88,7 +131,7 @@
                         <span>
                             This paper describes and evaluates an unsupervised author clustering model called SPATIUM. 
                             The proposed strategy can be adapted without any difficulty to different natural languages (such as Dutch, English, and Greek) and it can be applied to different text genres (newspaper articles, reviews, excerpts of novels, etc.).
-                            As features, we suggest using the m most frequent terms of each text (isolated words and punctuation symbols with m set to at most 200).
+                            As features, we suggest using the <i>m</i> most frequent terms of each text (isolated words and punctuation symbols with <i>m</i> set to at most 200).
                             Applying a distance measure, we define whether there is enough evidence that two texts were written by the same author.
                             The evaluations are based on six test collections (PAN AUTHOR CLUSTERING task at CLEF 2016).
                             A more detailed analysis shows the strengths of our approach but also indicates the problems and provides reasons for some of the failures of the SPATIUM model.
@@ -102,27 +145,27 @@
                         <br/>
                         <span>
                             This paper presents the author clustering problem and compares it to related authorship attribution questions.
-                            The proposed model is based on a distance measure called SPATIUM derived from the Canberra measure (weighted version of L1 norm).
+                            The proposed model is based on a distance measure called SPATIUM derived from the Canberra measure (weighted version of L<sup>1</sup> norm).
                             The selected features consist of the 200 most frequent words and punctuation symbols.
                             An evaluation methodology is presented and the test collections are extracted from the PAN CLEF 2016 evaluation campaign.
                             In addition to those, we also consider two additional corpora reflecting the literature domain more closely.
-                            Based on four different languages, the evaluation measures demonstrate a high precision and high F1 values for all 20 test collections.
+                            Based on four different languages, the evaluation measures demonstrate a high precision and high F<sub>1</sub> values for all 20 test collections.
                             A more detailed analysis provides reasons explaining some of the failures of the SPATIUM model.
                         </span>
                     </li>
                     <li class="tooltip" type="disc">
-                        <b>Regroupement d'auteurs: Qui a &eacute;crit cet ensemble de romans?</b><br/>
+                        <b>Regroupement d'auteurs : Qui a &eacute;crit cet ensemble de romans ?</b><br/>
                         Mirco Kocher &amp; Jacques Savoy.<br/>
                         In Nie, J.Y. and Lamprier, S. (Eds), <i>Proceeding CORIA 2017, Marseille, France, March 29-31, 2017</i>, ARIA, 311-326.
                         <a target="_blank" href="http://www.asso-aria.org/coria/2017/3.pdf">Paper</a>
                         <br/>
                         <span>
                             In French.
-                            This paper describes the author clustering problem where, based on a set of n texts, the number k of distinct authors must be determined and the texts must be regrouped into k classes according to their author.
+                            This paper describes the author clustering problem where, based on a set of <i>n</i> texts, the number <i>k</i> of distinct authors must be determined and the texts must be regrouped into <i>k</i> classes according to their author.
                             Using two test collections, one written in French, the second in English, different distance measures are described and evaluated.
-                            To define the needed features, the m most frequent words (e.g., m between 50 to 300) or the m letters and bigrams of letters have been used.
+                            To define the needed features, the <i>m</i> most frequent words (e.g., <i>m</i> between 50 to 300) or the m letters and bigrams of letters have been used.
                             Our experiments show that word-based representations offer usually the best performance.
-                            Using the cosine distance function does not produce a better F1 value compared to functions based on the L1 norm (e.g., Canberra).
+                            Using the cosine distance function does not produce a better F<sub>1</sub> value compared to functions based on the L<sup>1</sup> norm (e.g., Canberra).
                             However, the best distance measure for all cases cannot be defined precisely.
                             Applying a bootstrap approach, we show that the performance measures own a relatively large variability.
                             Finally, a deeper analysis indicates the difficulties and reasons explaining incorrect assignments.
@@ -137,10 +180,10 @@
                         <span>
                             This paper describes and evaluates an effective unsupervised author clustering and authorship linking model.
                             The suggested strategy can be adapted without any difficulty to different languages (such as Dutch, English, and Greek) in different text genres (e.g., newspaper articles and reviews).
-                            As features, we suggest using the m most frequent terms (isolated words and punctuation symbols) or the m most frequent character n-grams of each text.
+                            As features, we suggest using the <i>m</i> most frequent terms (isolated words and punctuation symbols) or the <i>m</i> most frequent character <i>n</i>-grams of each text.
                             Applying a simple distance measure, we determine whether there is enough indication that two texts were written by the same author.
                             The evaluations are based on 60 training and 120 test problems (PAN Author Clustering task at CLEF 2017).
-                            Using the most frequent terms results in a higher clustering precision, while using the most frequent character n-grams of letters gives a higher clustering recall.
+                            Using the most frequent terms results in a higher clustering precision, while using the most frequent character <i>n</i>-grams of letters gives a higher clustering recall.
                             An analysis to assess the variability of the performance measures indicates that we have a system working stable independent of the underlying text collection and that our parameter choices did not over-fit to the training data.
                         </span>
                     </li>
@@ -153,8 +196,8 @@
                         <span>
                             This paper describes and evaluates a supervised author profiling model.
                             The suggested strategy can be adapted without any problem to various languages (such as Arabic, English, Spanish, and Portuguese).
-                            As features, we suggest using the m most frequent terms of the query text (isolated words and punctuation symbols with m at most 200).
-                            Applying a simple distance measure and looking at the nearest text profiles, we can determine the gender (with the nominal values “male” or “female”) and the language variety (e.g., in Spanish the nominal values “Argentina”, “Chile”, “Colombia”, “Mexico”, “Peru”, “Spain”, or “Venezuela”).
+                            As features, we suggest using the <i>m</i> most frequent terms of the query text (isolated words and punctuation symbols with <i>m</i> at most 200).
+                            Applying a simple distance measure and looking at the nearest text profiles, we can determine the gender (with the nominal values "male" or "female") and the language variety (e.g., in Spanish the nominal values "Argentina", "Chile", "Colombia", "Mexico", "Peru", "Spain", or "Venezuela").
                             The training and test data is available for Twitter tweets (PAN Author Profiling task at CLEF 2017).
                             An analysis of the top ranked terms from a feature selection method allows a better understanding of the proposed assignments and presents typical writing styles for each category.
                         </span>
@@ -231,7 +274,7 @@
             <div data-include="me-sidebar.html"></div>
         </div>
         <div class="footer">
-            Last updated: 2017/09/01
+            Last updated: 2018/03/05
         </div>
     </body>
 </html>
